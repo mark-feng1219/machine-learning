@@ -72,3 +72,5 @@ def dataclass(train,test,k):#数据分类
     print(f'模型预测准确率为{acc}')
     return test
 dataclass(train,test,5)
+
+# test
