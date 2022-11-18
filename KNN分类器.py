@@ -45,7 +45,6 @@ def stander(dataset):#0-1标准化函数
     return normset
 #进行0-1标准化
 
-# test
 re_dataset=pandas.concat([stander(dataset.iloc[:,:2]),dataset.iloc[:,2]],axis=1)#axis=1实现在横向的连接
 def split(dataset,rate=0.9):#划分训练集和测试集
     n=dataset.shape[0]
@@ -73,5 +72,3 @@ def dataclass(train,test,k):#数据分类
     print(f'模型预测准确率为{acc}')
     return test
 dataclass(train,test,5)
-
-# test
